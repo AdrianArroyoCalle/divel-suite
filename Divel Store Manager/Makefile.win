@@ -1,0 +1,40 @@
+# Project: Divel Store Manager
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ wxDev-C++ IDE 7.4.1.13 on 20/01/12 18:43
+
+WXLIBNAME = wxmsw28u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/Divel\ Store\ ManagerApp.o Objects/MingW/Divel\ Store\ ManagerFrm.o Objects/MingW/Divel_Store_Manager_private.res
+LINKOBJ   = "Objects/MingW/Divel Store ManagerApp.o" "Objects/MingW/Divel Store ManagerFrm.o" Objects/MingW/Divel_Store_Manager_private.res
+LIBS      = -L"G:/Programas/C/wxDevC++/Dev-Cpp/Lib" -mwindows -l$(WXLIBNAME) -l$(WXLIBNAME)_gl -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregexu -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32 -lopengl32  
+INCS      = -I"G:/Programas/C/wxDevC++/Dev-Cpp/Include"
+CXXINCS   = -I"G:/Programas/C/wxDevC++/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/backward" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/mingw32" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include" -I"G:/Programas/C/wxDevC++/Dev-Cpp/" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/plotctrl" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/sheet" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/treemultictrl" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/things" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/msw" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/generic" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/fl" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/gizmos" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/html" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/mmedia" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/net" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/ogl" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/plot" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/protocol" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/stc" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/svg" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xml" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xrc" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx" -I"G:/Programas/C/wxDevC++/Dev-Cpp/include/common"
+RCINCS    = --include-dir "G:/PROGRA~1/C/WXDEVC~1/Dev-Cpp/include/common"
+BIN       = Output/MingW/Divel Store Manager.exe
+DEFINES   = -D__WXMSW__ -D__GNUWIN32__ -D_UNICODE
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -fexpensive-optimizations -O3
+CFLAGS    = $(INCS) $(DEFINES)   -fexpensive-optimizations -O3
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/Divel\ Store\ ManagerApp.o: $(GLOBALDEPS) Divel\ Store\ ManagerApp.cpp Divel\ Store\ ManagerApp.h Divel\ Store\ ManagerFrm.h
+	$(CPP) -c "Divel Store ManagerApp.cpp" -o "Objects/MingW/Divel Store ManagerApp.o" $(CXXFLAGS)
+
+Objects/MingW/Divel\ Store\ ManagerFrm.o: $(GLOBALDEPS) Divel\ Store\ ManagerFrm.cpp Divel\ Store\ ManagerFrm.h
+	$(CPP) -c "Divel Store ManagerFrm.cpp" -o "Objects/MingW/Divel Store ManagerFrm.o" $(CXXFLAGS)
+
+Objects/MingW/Divel_Store_Manager_private.res: Objects/MingW/Divel_Store_Manager_private.rc Divel\ Store\ ManagerApp.rc 
+	$(WINDRES) --input-format=rc -o Objects/MingW/Divel_Store_Manager_private.res $(RCINCS) Objects/MingW/DIVEL_~1.RC -O coff

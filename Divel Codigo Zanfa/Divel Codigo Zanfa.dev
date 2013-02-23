@@ -1,0 +1,82 @@
+[Project]
+FileName=Divel Codigo Zanfa.dev
+Name=Divel Codigo Zanfa
+UnitCount=2
+Type=1
+Ver=3
+IsCpp=0
+Folders=
+CommandLine=
+CompilerSettings=0000000000000000000000
+PchHead=-1
+PchSource=-1
+ProfilesCount=1
+ProfileIndex=0
+
+[Unit1]
+FileName=zanf.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[VersionInfo]
+Major=1
+Minor=3
+Release=1
+Build=53
+LanguageID=3082
+CharsetID=1252
+CompanyName=Divel
+FileVersion=1.3.1
+FileDescription=Decodificador de C. Zanfa
+InternalName=
+LegalCopyright=Copyright 2011-2012
+LegalTrademarks=
+OriginalFilename=Codigo Zanfa
+ProductName=Divel Codigo Zanfa
+ProductVersion=Solo decodificacion
+AutoIncBuildNrOnRebuild=0
+AutoIncBuildNrOnCompile=1
+
+[Unit2]
+FileName=Zanfa.h
+CompileCpp=0
+Folder=Divel Codigo Zanfa
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Profile1]
+ProfileName=Default Profile
+Type=1
+ObjFiles=
+Includes=
+Libs=
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+PreprocDefines=
+CompilerSettings=0000000000000000000000
+Icon=
+ExeOutput=Default Profile
+ImagesOutput=Images\
+ObjectOutput=Default Profile
+OverrideOutput=0
+OverrideOutputName=Divel Codigo Zanfa.exe
+HostApplication=
+CommandLine=
+UseCustomMakefile=0
+CustomMakefile=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerType=0
+

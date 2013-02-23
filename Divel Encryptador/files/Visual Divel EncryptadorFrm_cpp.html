@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Visual Divel EncryptadorFrm_cpp.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=win-1251" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #316AC5; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;"><span class="cpp1-comment">///-----------------------------------------------------------------
+///
+/// @file      Visual Divel EncryptadorFrm.cpp
+/// @author    Adrian Arroyo
+/// Created:   27/12/2011 16:57:06
+/// @section   DESCRIPTION
+///            Visual_Divel_EncryptadorFrm class implementation
+///
+///------------------------------------------------------------------
+
+</span><span class="cpp1-preprocessor">#include &quot;Visual Divel EncryptadorFrm.h&quot;
+
+</span><span class="cpp1-comment">//Do not add custom headers between
+//Header Include Start and Header Include End
+//wxDev-C++ designer will remove them
+////Header Include Start
+////Header Include End
+
+//----------------------------------------------------------------------------
+// Visual_Divel_EncryptadorFrm
+//----------------------------------------------------------------------------
+//Add Custom Events only in the appropriate block.
+//Code added in other places will be removed by wxDev-C++
+////Event Table Start
+</span><span class="cpp1-identifier">BEGIN_EVENT_TABLE(Visual_Divel_EncryptadorFrm,wxFrame)
+	</span><span class="cpp1-comment">////Manual Code Start
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">////Manual Code End
+</span><span class="cpp1-space">	
+	EVT_CLOSE(Visual_Divel_EncryptadorFrm::OnClose)
+	EVT_BUTTON(ID_WXBUTTON2,Visual_Divel_EncryptadorFrm::WxButton2Click)
+	EVT_BUTTON(ID_WXBUTTON1,Visual_Divel_EncryptadorFrm::WxButton1Click)
+END_EVENT_TABLE()
+</span><span class="cpp1-comment">////Event Table End
+
+</span><span class="cpp1-identifier">Visual_Divel_EncryptadorFrm::Visual_Divel_EncryptadorFrm(wxWindow *parent, wxWindowID id, </span><span class="cpp1-reservedword">const</span><span class="cpp1-space"> wxString &amp;title, </span><span class="cpp1-reservedword">const</span><span class="cpp1-space"> wxPoint &amp;position, </span><span class="cpp1-reservedword">const</span><span class="cpp1-space"> wxSize&amp; size, </span><span class="cpp1-reservedword">long</span><span class="cpp1-space"> style)
+: wxFrame(parent, id, title, position, size, style)
+{
+	CreateGUIControls();
+}
+
+Visual_Divel_EncryptadorFrm::~Visual_Divel_EncryptadorFrm()
+{
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrm::CreateGUIControls()
+{
+	</span><span class="cpp1-comment">//Do not add custom code between
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">//GUI Items Creation Start and GUI Items Creation End
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">//wxDev-C++ designer will remove them.
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">//Add the custom code before or after the blocks
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">////GUI Items Creation Start
+
+</span><span class="cpp1-space">	wxInitAllImageHandlers();   </span><span class="cpp1-comment">//Initialize graphic format handlers
+
+</span><span class="cpp1-space">	WxStaticBitmap1 = </span><span class="cpp1-reservedword">new</span><span class="cpp1-space"> wxStaticBitmap(</span><span class="cpp1-reservedword">this</span><span class="cpp1-symbol">, ID_WXSTATICBITMAP1, wxBitmap(wxT(</span><span class="cpp1-string">&quot;G:/Programas/C/Dev-Cpp/Divel Encryptador/Texto.bmp&quot;</span><span class="cpp1-symbol">), wxBITMAP_TYPE_BMP), wxPoint(</span><span class="cpp1-number">10</span><span class="cpp1-symbol">, </span><span class="cpp1-number">44</span><span class="cpp1-symbol">), wxSize(</span><span class="cpp1-number">283</span><span class="cpp1-symbol">, </span><span class="cpp1-number">105</span><span class="cpp1-symbol">) );
+
+	WxStaticBox1 = </span><span class="cpp1-reservedword">new</span><span class="cpp1-space"> wxStaticBox(</span><span class="cpp1-reservedword">this</span><span class="cpp1-symbol">, ID_WXSTATICBOX1, wxT(</span><span class="cpp1-string">&quot;Instrucciones&quot;</span><span class="cpp1-symbol">), wxPoint(</span><span class="cpp1-number">6</span><span class="cpp1-symbol">, </span><span class="cpp1-number">14</span><span class="cpp1-symbol">), wxSize(</span><span class="cpp1-number">289</span><span class="cpp1-symbol">, </span><span class="cpp1-number">156</span><span class="cpp1-symbol">));
+	WxStaticBox1-&gt;SetForegroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENU));
+	WxStaticBox1-&gt;SetFont(wxFont(</span><span class="cpp1-number">16</span><span class="cpp1-symbol">, wxSWISS, wxNORMAL, wxNORMAL, </span><span class="cpp1-reservedword">false</span><span class="cpp1-symbol">));
+
+	WxButton2 = </span><span class="cpp1-reservedword">new</span><span class="cpp1-space"> wxButton(</span><span class="cpp1-reservedword">this</span><span class="cpp1-symbol">, ID_WXBUTTON2, wxT(</span><span class="cpp1-string">&quot;Seleccionar archivos&quot;</span><span class="cpp1-symbol">), wxPoint(</span><span class="cpp1-number">3</span><span class="cpp1-symbol">, </span><span class="cpp1-number">171</span><span class="cpp1-symbol">), wxSize(</span><span class="cpp1-number">302</span><span class="cpp1-symbol">, </span><span class="cpp1-number">82</span><span class="cpp1-symbol">), </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, wxDefaultValidator, wxT(</span><span class="cpp1-string">&quot;WxButton2&quot;</span><span class="cpp1-symbol">));
+	WxButton2-&gt;SetFont(wxFont(</span><span class="cpp1-number">16</span><span class="cpp1-symbol">, wxSWISS, wxNORMAL, wxNORMAL, </span><span class="cpp1-reservedword">false</span><span class="cpp1-symbol">));
+
+	WxButton1 = </span><span class="cpp1-reservedword">new</span><span class="cpp1-space"> wxButton(</span><span class="cpp1-reservedword">this</span><span class="cpp1-symbol">, ID_WXBUTTON1, wxT(</span><span class="cpp1-string">&quot;Encriptar&quot;</span><span class="cpp1-symbol">), wxPoint(</span><span class="cpp1-number">2</span><span class="cpp1-symbol">, </span><span class="cpp1-number">254</span><span class="cpp1-symbol">), wxSize(</span><span class="cpp1-number">304</span><span class="cpp1-symbol">, </span><span class="cpp1-number">85</span><span class="cpp1-symbol">), </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, wxDefaultValidator, wxT(</span><span class="cpp1-string">&quot;WxButton1&quot;</span><span class="cpp1-symbol">));
+	WxButton1-&gt;SetFont(wxFont(</span><span class="cpp1-number">16</span><span class="cpp1-symbol">, wxSWISS, wxNORMAL, wxNORMAL, </span><span class="cpp1-reservedword">false</span><span class="cpp1-symbol">));
+
+	SetTitle(wxT(</span><span class="cpp1-string">&quot;Divel Encryptador 2.0&quot;</span><span class="cpp1-symbol">));
+	SetIcon(wxNullIcon);
+	SetSize(</span><span class="cpp1-number">8</span><span class="cpp1-symbol">,</span><span class="cpp1-number">8</span><span class="cpp1-symbol">,</span><span class="cpp1-number">315</span><span class="cpp1-symbol">,</span><span class="cpp1-number">374</span><span class="cpp1-symbol">);
+	Center();
+	
+	</span><span class="cpp1-comment">////GUI Items Creation End
+</span><span class="cpp1-symbol">}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrm::OnClose(wxCloseEvent&amp; event)
+{
+	Destroy();
+}
+
+</span><span class="cpp1-comment">/*
+ * WxButton2Click
+ */
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrm::WxButton2Click(wxCommandEvent&amp; event)
+{
+    WinExec(</span><span class="cpp1-string">&quot;explorer.exe&quot;</span><span class="cpp1-symbol">,SW_NORMAL); 	</span><span class="cpp1-comment">// insert your code here
+</span><span class="cpp1-symbol">}
+
+</span><span class="cpp1-comment">/*
+ * WxButton1Click
+ */
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrm::WxButton1Click(wxCommandEvent&amp; event)
+{
+	system(</span><span class="cpp1-string">&quot;copy /b imagen.jpg+archivos.rar encriptado.jpg&quot;</span><span class="cpp1-symbol">);</span><span class="cpp1-comment">// insert your code here
+</span><span class="cpp1-symbol">}
+</span></span>
+</code></pre>
+</body>
+</html>

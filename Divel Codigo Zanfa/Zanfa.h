@@ -1,0 +1,65 @@
+//Versión original de Zanfa.h - Sin cambios en la revisión
+#define HOLA 12
+#define AMIGO 13
+#define SER 1
+#define VIVIR 2
+#define HABLAR 3
+#define PENSAR 4
+#define NECESITAR 5
+#define ORDENADOR 45
+#define SI 99
+#define NO 98
+#define DINERO 30
+#define LIBERTAD 31
+#define YO 50
+#define TU_USTED 51
+#define EL_ELLA 52
+#define NOSOTROS 53
+#define VOSOTROS 54
+#define ELLOS_ELLAS 55
+#define INSULTO SIN ESPECIFICAR 96
+#define TAL VEZ_A VECES 97
+#define PROFESOR 44
+#define LIBRO 43
+#define TELEVISION 41
+#define PADRES 42
+#define PALABRA 79
+#define HOY_PROXIMAMENTE 95
+#define MANANA_LEJANAMENTE 94
+#define ADIOS 11
+#define AHORA 93
+#define AMOR 46
+#define PODER 47
+#define ARRIBA 48
+#define ABAJO 49
+#define QUIEN 20
+#define QUE 21
+#define COMO 22
+#define FELIZ_FELICIDAD 56
+#define LUGAR 57
+#define Y 58
+#define O 59
+#define SOLO 60
+#define SIEMPRE 61
+#define HACER 6
+#define IR 7
+#define VER 8
+#define NUNCA 62
+#define PRIMERO 701
+#define SEGUNDO 702
+#define TERCERO 703
+#define AYUDA_AYUDAR 63
+#define DIVEL 64
+#define INFORMACION 65
+#define PERIODICO 66
+#define INTERNET 67
+#define EMAIL_RED SOCIAL 68
+#define CUARTO 704
+#define QUINTO 705
+#define MAS_PERO 69
+#define NUMERO 70
+#define INFONUMERO 71
+#define INFOPROGRAMA 72
+#define ANIMAL 73
+#define MORIR_MUERTO 74
+

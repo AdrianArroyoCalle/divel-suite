@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Visual Divel EncryptadorApp_cpp.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=win-1251" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #316AC5; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;"><span class="cpp1-comment">//---------------------------------------------------------------------------
+//
+// Name:        Visual Divel EncryptadorApp.cpp
+// Author:      Adrian Arroyo
+// Created:     27/12/2011 16:57:05
+// Description: 
+//
+//---------------------------------------------------------------------------
+
+</span><span class="cpp1-preprocessor">#include &quot;Visual Divel EncryptadorApp.h&quot;
+#include &quot;Visual Divel EncryptadorFrm.h&quot;
+
+</span><span class="cpp1-identifier">IMPLEMENT_APP(Visual_Divel_EncryptadorFrmApp)
+
+</span><span class="cpp1-reservedword">bool</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrmApp::OnInit()
+{
+    Visual_Divel_EncryptadorFrm* frame = </span><span class="cpp1-reservedword">new</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrm(NULL);
+    SetTopWindow(frame);
+    frame-&gt;Show();
+    </span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">true</span><span class="cpp1-symbol">;
+}
+ 
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> Visual_Divel_EncryptadorFrmApp::OnExit()
+{
+	</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}
+</span></span>
+</code></pre>
+</body>
+</html>

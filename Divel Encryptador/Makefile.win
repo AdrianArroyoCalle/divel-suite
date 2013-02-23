@@ -1,0 +1,40 @@
+# Project: Divel Encryptador
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ wxDev-C++ IDE 7.4.1.13 on 18/01/12 17:42
+
+WXLIBNAME = wxmsw28u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/Visual\ Divel\ EncryptadorApp.o Objects/MingW/Visual\ Divel\ EncryptadorFrm.o Objects/MingW/Visual_Divel_Encryptador_private.res
+LINKOBJ   = "Objects/MingW/Visual Divel EncryptadorApp.o" "Objects/MingW/Visual Divel EncryptadorFrm.o" Objects/MingW/Visual_Divel_Encryptador_private.res
+LIBS      = -L"H:/Programas/C/wxDevC++/Dev-Cpp/Lib" -mwindows -l$(WXLIBNAME) -l$(WXLIBNAME)_gl -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregexu -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32 -lopengl32  
+INCS      = -I"H:/Programas/C/wxDevC++/Dev-Cpp/Include"
+CXXINCS   = -I"H:/Programas/C/wxDevC++/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/backward" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/mingw32" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include" -I"H:/Programas/C/wxDevC++/Dev-Cpp/" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/plotctrl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/sheet" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/treemultictrl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/things" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/msw" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/generic" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/fl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/gizmos" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/html" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/mmedia" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/net" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/ogl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/plot" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/protocol" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/stc" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/svg" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xml" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xrc" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common"
+RCINCS    = --include-dir "H:/PROGRA~1/C/WXDEVC~1/Dev-Cpp/include/common"
+BIN       = Output/MingW/Visual Divel Encryptador.exe
+DEFINES   = -D__WXMSW__ -D__GNUWIN32__ -D_UNICODE
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -fexpensive-optimizations -O3
+CFLAGS    = $(INCS) $(DEFINES)   -fexpensive-optimizations -O3
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/Visual\ Divel\ EncryptadorApp.o: $(GLOBALDEPS) Visual\ Divel\ EncryptadorApp.cpp Visual\ Divel\ EncryptadorApp.h Visual\ Divel\ EncryptadorFrm.h
+	$(CPP) -c "Visual Divel EncryptadorApp.cpp" -o "Objects/MingW/Visual Divel EncryptadorApp.o" $(CXXFLAGS)
+
+Objects/MingW/Visual\ Divel\ EncryptadorFrm.o: $(GLOBALDEPS) Visual\ Divel\ EncryptadorFrm.cpp Visual\ Divel\ EncryptadorFrm.h
+	$(CPP) -c "Visual Divel EncryptadorFrm.cpp" -o "Objects/MingW/Visual Divel EncryptadorFrm.o" $(CXXFLAGS)
+
+Objects/MingW/Visual_Divel_Encryptador_private.res: Objects/MingW/Visual_Divel_Encryptador_private.rc Visual\ Divel\ EncryptadorApp.rc 
+	$(WINDRES) --input-format=rc -o Objects/MingW/Visual_Divel_Encryptador_private.res $(RCINCS) Objects/MingW/VISUAL~1.RC -O coff

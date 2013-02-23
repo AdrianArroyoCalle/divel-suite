@@ -1,0 +1,35 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 0,1,1,4
+PRODUCTVERSION 0,1,1,4
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "0C0A04E4"
+		 {
+			 VALUE "CompanyName", "Divel"
+			 VALUE "FileVersion", "Versión Alpha 1.1.1"
+			 VALUE "FileDescription", "Hecho usando Dev-C++ 4.9.9.2"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", "Copyright 2011"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "Codigo Zanfa"
+			 VALUE "ProductName", "Divel Codigo Zanfa"
+			 VALUE "ProductVersion", "0"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0C0A, 1252
+	 }
+}
+

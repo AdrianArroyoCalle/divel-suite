@@ -1,0 +1,37 @@
+# Project: Divel Codigo Zanfa
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ wxDev-C++ IDE 7.4.1.13 on 11/08/12 17:37
+
+WXLIBNAME = wxmsw28u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Default\ Profile/zanf.o Default\ Profile/Divel_Codigo_Zanfa_private.res
+LINKOBJ   = "Default Profile/zanf.o" "Default Profile/Divel_Codigo_Zanfa_private.res"
+LIBS      = -L"H:/Programas/C/wxDevC++/Dev-Cpp/Lib"  
+INCS      = -I"H:/Programas/C/wxDevC++/Dev-Cpp/Include"
+CXXINCS   = -I"H:/Programas/C/wxDevC++/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/backward" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5/mingw32" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/c++/3.4.5" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include" -I"H:/Programas/C/wxDevC++/Dev-Cpp/" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/plotctrl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/sheet" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/treemultictrl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx/things" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty/wx" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/3rdparty" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/msw" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/generic" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/fl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/gizmos" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/html" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/mmedia" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/net" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/ogl" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/plot" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/protocol" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/stc" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/svg" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xml" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx/xrc" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common/wx" -I"H:/Programas/C/wxDevC++/Dev-Cpp/include/common"
+RCINCS    = --include-dir "H:/PROGRA~1/C/WXDEVC~1/Dev-Cpp/include/common"
+BIN       = Default Profile/Divel Codigo Zanfa.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = gcc.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Default\ Profile/zanf.o: $(GLOBALDEPS) zanf.c Zanfa.h
+	$(CC) -c zanf.c -o "Default Profile/zanf.o" $(CFLAGS)
+
+Default\ Profile/Divel_Codigo_Zanfa_private.res: Default\ Profile/Divel_Codigo_Zanfa_private.rc 
+	$(WINDRES) --input-format=rc -o "Default Profile/Divel_Codigo_Zanfa_private.res" $(RCINCS) DEFAUL~1/DIVEL_~1.RC -O coff

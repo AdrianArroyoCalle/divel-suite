@@ -1,0 +1,37 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "Divel Codigo Zanfa.ico"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,2,1,46
+PRODUCTVERSION 1,2,1,46
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "0C0A04E4"
+		 {
+			 VALUE "CompanyName", "Divel"
+			 VALUE "FileVersion", "1.2.1"
+			 VALUE "FileDescription", "Decodificador de C. Zanfa"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", "Copyright 2011"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "Codigo Zanfa"
+			 VALUE "ProductName", "Divel Codigo Zanfa"
+			 VALUE "ProductVersion", "Solo decodificacion"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0C0A, 1252
+	 }
+}
+

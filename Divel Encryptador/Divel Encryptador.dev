@@ -1,0 +1,59 @@
+[Project]
+FileName=Divel Encryptador.dev
+Name=Divel Encryptador
+UnitCount=1
+Type=1
+Ver=1
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=Divel_Encryptador_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+IsCpp=0
+Icon=Divel Encryptador.ico
+ExeOutput=
+ObjectOutput=
+OverrideOutput=0
+OverrideOutputName=Divel Encryptador.exe
+HostApplication=
+Folders=
+CommandLine=
+UseCustomMakefile=0
+CustomMakefile=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000000000
+
+[Unit1]
+FileName=encryptador.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[VersionInfo]
+Major=1
+Minor=3
+Release=1
+Build=2
+LanguageID=3082
+CharsetID=1252
+CompanyName=Divel
+FileVersion=1.3
+FileDescription=Encriptador de Divel
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=Divel Encrypter
+ProductVersion=
+AutoIncBuildNr=1
+
