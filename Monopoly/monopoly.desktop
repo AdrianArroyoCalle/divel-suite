@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Monopoly
+Comment=An adaptation of the classic Monopoly for 2 players
+Comment[es]=La adaptación del clásico Monopoly a 2 jugadores
+Exec=/usr/games/Monopoly
+Icon=/usr/pixmaps/monopoly.jpg
+Categories=StrategyGame
+Terminal=false

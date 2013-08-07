@@ -1,0 +1,42 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Adrian Arroyo Calle <adrian.arroyocalle@gmail.com>
+pkgname=Monopoly
+pkgver=1.8.1
+pkgrel=1
+pkgdesc="An adaptation for 2 players of classic Monopoly"
+arch=('i686' 'x86_64')
+url="http://sites.google.com/site/divelmedia"
+license=('GPL')
+groups=()
+depends=('wxgtk')
+makedepends=('wxgtk')
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=(monopoly.tar.gz)
+noextract=()
+md5sums=('1556a74cdb6d3482cf91efad71d0e239') #generate with 'makepkg -g'
+
+build() {
+  cd "$srcdir"
+
+  make
+}
+
+package() {
+ mkdir -p $pkgdir/usr/games/
+ mkdir -p $pkgdir/usr/share/applications
+ mkdir -p $pkgdir/usr/share/pixmaps
+ cp $srcdir/Monopoly $pkgdir/usr/games/Monopoly
+ cp $srcdir/monopoly.desktop $pkgdir/usr/share/applications/
+ cp $srcdir/monopoly.bmp $pkgdir/usr/share/pixmaps
+}
